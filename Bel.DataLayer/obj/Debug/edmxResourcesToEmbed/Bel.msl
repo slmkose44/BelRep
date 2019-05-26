@@ -20,5 +20,48 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Events">
+      <EntityTypeMapping TypeName="beldatabaseModel.Event">
+        <MappingFragment StoreEntitySet="Event">
+          <ScalarProperty Name="RefMunicipalityClassId" ColumnName="RefMunicipalityClassId" />
+          <ScalarProperty Name="EndDate" ColumnName="EndDate" />
+          <ScalarProperty Name="StartDate" ColumnName="StartDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MunicipalityClasses">
+      <EntityTypeMapping TypeName="beldatabaseModel.MunicipalityClass">
+        <MappingFragment StoreEntitySet="MunicipalityClass">
+          <ScalarProperty Name="Quota" ColumnName="Quota" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Reservations">
+      <EntityTypeMapping TypeName="beldatabaseModel.Reservation">
+        <MappingFragment StoreEntitySet="Reservation">
+          <ScalarProperty Name="StudentsJson" ColumnName="StudentsJson" />
+          <ScalarProperty Name="RefEventId" ColumnName="RefEventId" />
+          <ScalarProperty Name="RefSchoolId" ColumnName="RefSchoolId" />
+          <ScalarProperty Name="RefMunicipalityClassId" ColumnName="RefMunicipalityClassId" />
+          <ScalarProperty Name="RefUserId" ColumnName="RefUserId" />
+          <ScalarProperty Name="AdvisorName" ColumnName="AdvisorName" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="SchoolClasses">
+      <EntityTypeMapping TypeName="beldatabaseModel.SchoolClass">
+        <MappingFragment StoreEntitySet="SchoolClass">
+          <ScalarProperty Name="RefUserId" ColumnName="RefUserId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>
