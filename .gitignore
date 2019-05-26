@@ -1,0 +1,7 @@
+*bin/
+*publish/
+*obj/
+*.user
+*.suo
+.vs/config/applicationhost.config
+packages/
